@@ -1,28 +1,31 @@
 import { useState } from 'react';
 import './App.css';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
-  const [detailLevel, setDetailLevel] = useState("low");
+  const [detailLevel, setDetailLevel] = useState("brief");
 
-  const content = {
-    intro: {
-      low: "Software Engineer.",
-      medium: "I build modern web applications.",
-      high: "I am a software engineer specializing in building scalable and responsive web applications using React and Node.js."
-    }
-  };
-  
   return (
-    <div>
-      <nav>
-        <button onClick={() => setDetailLevel("low")}>Low Detail</button>
-        <button onClick={() => setDetailLevel("medium")}>Medium Detail</button>
-        <button onClick={() => setDetailLevel("high")}>High Detail</button>
+    <div className="min-h-screen bg-gray-100">
+      <p class="flex items-center justify-center space-x-6 text-green-600 font-semibold">I am aware that you're time is limited and valuable, so I have made varying level of detail for this portfolio that you can change between to save time if needed</p>
+      <nav class="flex items-center justify-center space-x-4 pt-2 pb-2">
+        <button title="This can be read in 2 minutes." class="btn bg-gray-400 hover:bg-gray-700 py-2 px-4 rounded" onClick={() => setDetailLevel("low")}>Keywords</button>
+        <button title="This can be read in 5 minutes."class="btn bg-gray-400 hover:bg-gray-700 py-2 px-4 rounded" onClick={() => setDetailLevel("medium")}>Short sentences</button>
+        <button title="This can be read in 10 minutes."class="btn bg-gray-400 hover:bg-gray-700 py-2 px-4 rounded" onClick={() => setDetailLevel("high")}>Paragraphs</button>
       </nav>
-      <p>{content.intro[detailLevel]}</p>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-600">Hello, Tailwind!</h1>
-      </div>
+      <Header detailLevel={detailLevel} setDetailLevel={setDetailLevel} />
+      <main>
+        <About detailLevel={detailLevel} />
+        <Skills />
+        <Projects detailLevel={detailLevel} />
+        <Experience detailLevel={detailLevel} />
+        <Contact />
+      </main>
     </div>
   );
 }
