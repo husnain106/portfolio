@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <nav class="flex flex-col items-center justify-center space-x-4 pt-2 pb-2 sticky top-0 bg-gray-100">
-        <p class="space-x-6 text-green-600 font-semibold">I am aware that you're time is limited and valuable, so I have made varying level of detail for this portfolio that you can change between to save time if needed</p>
+        <p class="space-x-6 text-green-600 font-semibold">I am aware that your time is limited and valuable, so I have made varying level of detail for this portfolio that you can change between to save time if needed</p>
         <div className="flex flex-row items-center justify-center space-x-4 pt-2 pb-2 sticky top-0 bg-gray-100">
           <button title="This can be read in 2 minutes." class= {getButtonClass("low")} onClick={() => setDetailLevel("low")}>No Detail</button>
           <button title="This can be read in 5 minutes."class={getButtonClass("medium")} onClick={() => setDetailLevel("medium")}>Some Detail</button>
