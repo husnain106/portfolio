@@ -22,7 +22,7 @@ const About = ({ detailLevel }) => {
         <section className="py-8 bg-white">
             <div className="container mx-auto pl-10">
                 <h2 className="text-xl font-bold mb-4">About Me</h2>
-                <p>{details[detailLevel]}</p>
+                <p className="pl-10">{details[detailLevel]}</p>
             </div>
         </section>
     );
