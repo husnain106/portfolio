@@ -7,9 +7,6 @@ const Header = () => {
             <h1 className="text-2xl font-bold">Husnain Soharwardi</h1>
             <h2 className="text-2x1 font-bold">Software Developer</h2>
             <div className="flex space-x-4 items-center">
-            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
-                Linkedin
-            </a>
         </div>
         </div>
     </header>
