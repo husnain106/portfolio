@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import About from "./components/About";
+import Contact from './components/Contact';
 import Education from './components/Education';
 import Experience from "./components/Experience";
 import Header from "./components/Header";
@@ -33,6 +34,7 @@ function App() {
         <Projects detailLevel={detailLevel} />
         <Experience detailLevel={detailLevel} />
         <Skills />
+        <Contact/>
       </main>
     </div>
   );

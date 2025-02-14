@@ -2,6 +2,13 @@ import React from "react";
 
 const Experience = ({ detailLevel }) => {
   const experiences = [
+    {
+      "title": "Developer",
+      "company": "Leeds Teaching Hospital Trust",
+      "low": "Developed interactive eLearning solutions.",
+      "medium": "Designed and developed multiple interactive eLearning solutions, ensuring an engaging and accessible user experience. Utilized tools like GOMO eLearning and SCORM to enhance digital learning content.",
+      "high": "As a Developer at Leeds Teaching Hospital Trust, I played a key role in designing and developing multiple interactive eLearning solutions. I leveraged tools such as GOMO eLearning and SCORM to create accessible and engaging digital learning content for healthcare professionals. In collaboration with stakeholders, I gathered requirements, optimized learning modules, and ensured smooth deployment of training materials. Additionally, I handled administrative tasks efficiently, demonstrating technical expertise, problem-solving skills, and adaptability in a professional setting. This role strengthened my ability to balance technical development with user-focused content creation."
+    },
       {
         "title": "Revenue Protection Officer",
         "company": "Carlisle Support Services",
